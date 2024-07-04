@@ -1,0 +1,132 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    h2.section__title {
+        font-size: auto;
+        margin-bottom: 0px;
+    }
+    span.section__subtitle {
+        margin-bottom: 40px; 
+    }
+    
+    
+    ul {
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        margin-top: 10px;
+
+        li {
+            font-size: 14px; 
+            margin-right: 50px;
+            padding: 7px;
+            border-radius: 12rem;
+            cursor: pointer;
+        }
+    }
+
+    .active {
+        background-color: rgb(21, 119, 224);
+        color: rgb(251, 251, 251);
+        border-radius: 5px;
+    }
+
+    .container {
+        width: 70%;
+        margin-top: 10px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; 
+     
+
+        .item {
+            width: 220px;
+            height: 150px;
+            border-radius: 20px;
+            border: 1px solid rgb(240, 239, 239);
+            margin: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden; 
+            cursor: pointer;
+            transition: all 0.5s ease; 
+
+            &:hover h3 {
+                opacity: 1; 
+            }
+
+            img {
+                width: 100%; 
+                height: auto; 
+                object-fit: cover;
+                border-radius: 20px;
+                z-index: 1;
+            }
+
+            h3 {
+                position: absolute;
+                font-size: 20px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0; 
+                transition: opacity 0.3s ease; 
+                z-index: 2; 
+                color: black; 
+                background-color: rgba(255, 255, 255, 0.7); 
+                padding: 10px; 
+            }
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+                z-index: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio {
+        h1 {
+            font-size: 6vw; 
+        }
+
+        ul {
+            li {
+                font-size: 3vw; 
+                margin: 1vw; 
+                padding: 0.5vw; 
+            }
+        }
+
+        .container {
+            width: 100%; 
+            .item {
+                width: 100%; 
+                max-width: 90vw; 
+                height: 30vw; 
+                border-radius: 5vw; 
+                margin: 2vw; 
+                img {
+                    border-radius: 5vw;
+                }
+                h3 {
+                    font-size: 5vw; 
+                    padding: 2vw;
+                }
+            }
+        }
+    }
+}

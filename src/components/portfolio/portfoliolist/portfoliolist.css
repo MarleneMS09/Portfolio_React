@@ -1,0 +1,24 @@
+.portfolioList {
+    font-size: 14px; 
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 12rem;
+    cursor: pointer;
+}
+
+
+.active {
+background-color: rgb(21, 119, 224);
+color: rgb(251, 251, 251);
+border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .portfolioList {
+      font-size: 3vw; 
+      margin-right: 1vw; 
+      margin-bottom: 0.5vw;
+      padding: 0.5vw; 
+    }
+  }

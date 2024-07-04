@@ -1,0 +1,8 @@
+.scrollup {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 3rem;
+    background-color: var(--title-color);
+    opacity: 0.8;
+    padding: 0.3rem 0.5rem;
+}
