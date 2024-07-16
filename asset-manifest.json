@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio_React/static/css/main.7eb228f9.css",
+    "main.js": "/Portfolio_React/static/js/main.a781b591.js",
+    "static/media/Vanessa Marlene Sanchez(4).png": "/Portfolio_React/static/media/Vanessa Marlene Sanchez(4).d50686b881d25c6df43e.png",
+    "static/media/fotoazul_blanco.png": "/Portfolio_React/static/media/fotoazul_blanco.6a5e530b9cba207798ba.png",
+    "static/media/Foto de Perfil de Facebook elegancia moderna gris ceniza blanco mostaza.png": "/Portfolio_React/static/media/Foto de Perfil de Facebook elegancia moderna gris ceniza blanco mostaza.0c889dfa09005d51ba07.png",
+    "static/media/VMMS_CV_2024-2.pdf": "/Portfolio_React/static/media/VMMS_CV_2024-2.9d9ad570641559b58b97.pdf",
+    "index.html": "/Portfolio_React/index.html",
+    "main.7eb228f9.css.map": "/Portfolio_React/static/css/main.7eb228f9.css.map",
+    "main.a781b591.js.map": "/Portfolio_React/static/js/main.a781b591.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7eb228f9.css",
+    "static/js/main.a781b591.js"
+  ]
+}
