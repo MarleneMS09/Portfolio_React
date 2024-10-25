@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { contentPortfolio, designPortfolio, featuredPortfolio, mobilePortfolio, webPortfolio } from "../../data";
+import { backendPortfolio, contentPortfolio, featuredPortfolio, uxuiPortfolio, webPortfolio } from "../../data";
 import './portfolio.css';
 import { Portfoliolist } from './portfoliolist/Portfoliolist';
 
@@ -17,16 +17,16 @@ export const Portfolio = () => {
       title: "Web App"
     },
     {
-      id: "mobile",
-      title: "Mobile App"
+      id: "uxui",
+      title: "UX/UI"
     },
     {
-      id: "design",
-      title: "Design"
+      id: "backend",
+      title: "Back-End"
     },
     {
-      id: "content",
-      title: "Content"
+      id: "aditional",
+      title: "Aditional"
     }
   ];
   useEffect(() => {
@@ -37,13 +37,13 @@ export const Portfolio = () => {
       case "web":
         setData(webPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
+      case "uxui":
+        setData(uxuiPortfolio);
         break;
-      case "design":
-        setData(designPortfolio);
+      case "backend":
+        setData(backendPortfolio);
         break;
-      case "content":
+      case "aditional":
         setData(contentPortfolio);
         break;
       default:

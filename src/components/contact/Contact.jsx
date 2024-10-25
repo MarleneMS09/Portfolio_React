@@ -25,7 +25,6 @@ export const Contact = () => {
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon"></i>
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data"> user@gmail.com </span>
               <a
                 href="mailto:marlenemsanchez09@gmail.com"
                 className="contact__button"
@@ -38,24 +37,11 @@ export const Contact = () => {
                 ></i>
               </a>
             </div>
+            
             <div className="contact__card">
-              <i className="bx bxl-whatsapp contact__card-icon"></i>
-              <h3 className="contact__card-title">Whatsapp</h3>
-              <span className="contact__card-data"> +000000000</span>
-              <a href="###" className="contact__button">
-                {" "}
-                Write me{" "}
-                <i
-                  className="bx bx-right-arrow-alt
-              contact__button-icon"
-                ></i>
-              </a>
-            </div>
-            <div className="contact__card">
-              <i className="bx bxl-messenger contact__card-icon"></i>
-              <h3 className="contact__card-title">Messenger</h3>
-              <span className="contact__card-data"> user.fb123</span>
-              <a href="###" className="contact__button">
+              <i className="bx bxl-linkedin contact__card-icon"></i>
+              <h3 className="contact__card-title">LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/vanessamarlenemsanchez/" className="contact__button">
                 {" "}
                 Write me{" "}
                 <i

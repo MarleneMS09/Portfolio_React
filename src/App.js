@@ -1,5 +1,6 @@
 import './App.css';
 import { About } from './components/about/About';
+
 import { Contact } from './components/contact/Contact';
 import { Cursor } from './components/cursor/Cursor';
 import { Footer } from './components/footer/Footer';
@@ -27,6 +28,8 @@ function App() {
     <Portfolio />
     <Contact />
     <Footer />
+
+  
    </main>
    </>    
   );

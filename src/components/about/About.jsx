@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from "../../assets/VMMS_CV_2024-2.pdf";
+import CV from "../../assets/cv_vmms_2024.pdf";
 import AboutImg from "../../assets/Vanessa Marlene Sanchez(4).png";
 import "../about/About.css";
 import { Info } from './Info';
@@ -18,8 +18,8 @@ export const About = () => {
       <img src={AboutImg} alt="img_aboutme" className="about__img" />
       <div className="about__data">
         <Info />
-        <p className="about__description"> I'm a Software Engineer & Full Stack Developer, I created web pages with UX user experience.
-         I have +1 y of experience that focused  in create great experiences </p>
+        <p className="about__description"> I'm a Software Engineer and Full Stack Developer with 2+ years of experience creating seamless, user-focused web experiences. 
+          {<br></br>}I transform ideas into innovative solutions, always prioritizing intuitive design and great user interactions. </p>
         <a download = "" href= {CV} className="button button--flex"> Download CV</a>
         <svg
                 class="button__icon"
