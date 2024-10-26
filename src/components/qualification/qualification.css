@@ -18,7 +18,7 @@
     color: #70cbf2;
 }
 .quantification__icon {
-    font-size: 1.8rem;
+    font-size: 1.10rem;
     margin-right: var(--mb-0-25);
 }
 .qualification__active {
@@ -49,7 +49,8 @@
 .qualification__subtitle {
     display: inline-block;
     font-size: var(--normal-font-size);
-    margin-bottom: var(--mb-1);
+    margin-bottom: var(--mb-0-25);
+    
 }
 .qualification__calender {
     font-size: var(--small-font-size);
@@ -68,9 +69,6 @@
     background-color: var(--text-color);
     transform: translate(6px, -7px);
 }
-
-
-
 
 @media screen and (max-width: 992px) {
     .qualification__container {
@@ -101,7 +99,6 @@
     }
 }
 
-
 .qualification__content--right {
     position: relative; 
 }
@@ -127,3 +124,136 @@
     left: -6px;
 }
 
+/* Estilos específicos para la sección de experiencia laboral */
+.experience-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 9px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    padding-left: 40px; 
+}
+  
+.experience-list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 16px; 
+    height: 100%;
+    width: 1px;
+    background-color: #ccc;
+    z-index: 0;
+
+}
+
+.experience-dot {
+    width: 14px;
+    height: 14px;
+    background-color: #077bff;
+    border-radius: 50%;
+    position: absolute;
+    left: 11px; 
+    z-index: 1;
+    animation: colorChange 3s infinite ease-in-out; 
+
+}
+@keyframes colorChange {
+    0%, 100% {
+        background-color: #003f88; 
+        transform: scale(1);
+        box-shadow: 0 0 5px #003f88;
+    }
+    25% {
+        background-color: #007bff; 
+        transform: scale(1.2); 
+        box-shadow: 0 0 10px #007bff; 
+    }
+    50% {
+        background-color: #00aaff; 
+        transform: scale(1);
+        box-shadow: 0 0 5px #00aaff;
+    }
+    75% {
+        background-color: #80d4ff;
+        transform: scale(1.1);
+        box-shadow: 0 0 8px #80d4ff;
+    }
+}
+
+
+.experience-content {
+    margin-left: 30px;
+}
+  
+.experience-position {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3483f9;
+}
+  
+.experience-company {
+    font-size: 12px;
+    color: #333;
+    margin: 5px 0;
+}
+  
+.experience-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+  
+.experience-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+  
+.experience-link {
+    font-size: 14px;
+    color: #17aae0;
+    text-decoration: none;
+}
+  
+.experience-link:hover {
+    text-decoration: underline;
+}
+.experience-item {
+    background-color: #fffefe; 
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.experience-item:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.experience-position:hover, .experience-link:hover {
+    color: #0056b3; 
+}
+
+.experience-position {
+    margin-bottom: 5px;
+}
+
+.experience-company {
+    margin-bottom: 4px; 
+}
+
+.experience-date {
+    margin-bottom: 6px; 
+}
+
+.experience-description {
+    margin-bottom: 8px; 
+}

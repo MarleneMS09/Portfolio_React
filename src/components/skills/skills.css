@@ -1,24 +1,165 @@
-
-
 .skills__container {
     grid-template-columns: repeat(2, 350px);
     column-gap: 3rem;
     justify-content: center;
-
-   
 }
+
+/* Estilo común para todas las tarjetas */
 .skills__content {
-    background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
     position: relative;
+    box-shadow: 0px 4px 8px rgba(20, 4, 4, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Estilo vibrante para Frontend */
+.frontend {
+    background: linear-gradient(135deg, #e6f7ff, #b3e4ff);
+    /* Fondo claro para mejorar el contraste */
+    border: none;
+    overflow: hidden;
+    position: relative;
+    color: #030c12;
+    /* Color oscuro para el texto */
+}
+
+.frontend::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.4), rgba(173, 216, 230, 0.4), rgba(192, 242, 255, 0.4));
+    animation: paintMove 5s infinite linear;
+    filter: blur(6px);
+    /* Blur más reducido para no interferir con el texto */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+@keyframes paintMove {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.frontend:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(112, 203, 242, 0.3);
+}
+
+/* Ajuste de color del texto para Frontend */
+.frontend .skills__title,
+.frontend .skills__name {
+    position: relative;
+    z-index: 2;
+    color: #323a3f;
+    /* Texto negro para Frontend */
+}
+
+/* Estilo de fondo con múltiples líneas de código para Backend */
+/* Estilo de fondo con múltiples líneas de código para Backend */
+.backend {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 1px solid #444444;
+    font-family: monospace;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Código de fondo estático con efecto de escritura */
+/* Estilo de fondo con múltiples líneas de código para Backend */
+/* Código de fondo estático con efecto de escritura */
+/* Estilo de fondo con múltiples líneas de código para Backend */
+.backend {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 1px solid #444444;
+    font-family: monospace;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Código de fondo estático con efecto de escritura */
+.backend::before {
+    content: "const skills = ['PHP', 'NodeJS', 'Python', 'Django', 'SQL', 'Programming', 'POO'];\n"
+        "let i = 0;\n"
+        "while (i < skills.length) {\n"
+        "   console.log(skills[i]);\n  i++;\n"
+        "   i++;\n"
+        "}\n"
+        "console.log('Skills loaded...');\n\n"
+        "// Initializing application components\n"
+        "const components = ['Header', 'Sidebar', 'Footer', 'Main'];\n\n"
+        "// Load configuration settings\n"
+        "const config = {\n"
+        "   environment: 'production',\n"
+        "   debug: false,\n"
+        "   version: '1.0.2'\n"
+        "};\n\n"
+        "// Function to fetch data\n"
+        "function fetchData(endpoint) {\n"
+        "   return fetch(endpoint)\n"
+        "       .then(response => response.json())\n"
+        "       .catch(error => console.error('Fetch Error:', error));\n"
+        "}\n\n"
+        "// Recursive function example\n"
+        "function factorial(n) {\n"
+        "   return n === 0 ? 1 : n * factorial(n - 1);\n"
+        "}\n\n"
+        "// Render components\n"
+        "function renderComponents() {\n"
+        "   components.forEach(component => {\n"
+        "       console.log(`Rendering ${component}...`);\n"
+        "   });\n"
+        "}\n\n"
+        "// System initialization\n"
+        "function initSystem() {\n"
+        "   console.log('System initialized.');\n"
+        "}\n\n";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.1);
+    line-height: 1.5rem;
+    white-space: pre-wrap;
+    overflow: hidden;
+    animation: revealText 10s steps(50, end) infinite;
+    /* Ajuste para animación cíclica */
+}
+
+@keyframes revealText {
+    0% {
+        max-height: 0;
+    }
+
+    100% {
+        max-height: 100%;
+    }
+}
+
+.backend:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 .skills__title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     text-align: center;
-    margin-bottom: var(--mb-1-5); 
+    margin-bottom: var(--mb-1-5);
+    color: #ece8e8;
 }
 
 .skills__box {
@@ -26,31 +167,35 @@
     justify-content: center;
     column-gap: 2.5rem;
 }
+
 .skills__group {
     display: grid;
     align-items: flex-start;
     row-gap: 1rem;
 }
+
 .skills__data {
     display: flex;
+    align-items: center;
     column-gap: 0.5rem;
-   
 }
 
 .skills .bx-badge-check {
-    font-size: 1rem;
-    color: var(--title-color);
+    font-size: 1.2rem;
 }
+
 .skills__name {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     line-height: 18px;
     margin-bottom: 1.5px;
+    color: #ffffff;
 }
 
 .skills__level {
     font-size: var(--tiny-font-size);
 }
+
 
 @media screen and (max-width: 992px) {
     .skills__container {
@@ -59,32 +204,22 @@
     }
 }
 
-
 @media screen and (max-width: 576px) {
-  .skills__container {
-    grid-template-columns: 1fr;
-  }
- .skills__content {
-    padding: 1.5rem;
- }
+    .skills__container {
+        grid-template-columns: 1fr;
+    }
 
+    .skills__content {
+        padding: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 350px) {
     .skills__box {
         column-gap: 1.25rem;
     }
+
     .skills__name {
         font-size: var(--small-font-size);
     }
 }
-
-
-
-
-
-
-
-
-
-

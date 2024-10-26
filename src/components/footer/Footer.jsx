@@ -5,9 +5,12 @@ export const Footer = () => {
   return (
     <footer className="footer">
         <div className="footer__container container">
-        <h1 class="footer__title"> MS 
- </h1>
-
+        <a href="#home">
+  <h1 class="footer__title">MS</h1>
+</a>
+ <p className="footer__description">
+          A Full Stack Developer, delivering modern, scalable solutions.
+        </p>
 
             <ul className="footer__list">
               <li>
@@ -26,7 +29,7 @@ export const Footer = () => {
             <a href=" https://github.com/MarleneMS09 " className="footer__social-link" target="_blank"><i class= "uil uil-github-alt"></i></a>
 
             </div>
-
+           
             <span className = "footer__copy"> &#169; Vanessa Marlene Sanchez </span>
  
         </div>

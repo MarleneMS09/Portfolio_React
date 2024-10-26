@@ -23,10 +23,10 @@ export const Contact = () => {
           <h3 className="contact__title">Talk to me</h3>
           <div className="contact__info">
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
-              <h3 className="contact__card-title">Email</h3>
+              <i className="bx bxl-github contact__card-icon"></i>
+              <h3 className="contact__card-title">Github</h3>
               <a
-                href="mailto:marlenemsanchez09@gmail.com"
+                href="https://github.com/MarleneMS09"
                 className="contact__button"
               >
                 {" "}
@@ -61,7 +61,7 @@ export const Contact = () => {
             </div>
             <div className="contact__form-div">
               <label className="contact__form-tag">Email</label>
-              <input type="email" name="email" className="contact__form-input" placeholder="Insert your name" />
+              <input type="email" name="email" className="contact__form-input" placeholder="example@gmail.com" />
             </div>
             <div className="contact__form-div contact__form-area">
               <label className="contact__form-tag"></label>

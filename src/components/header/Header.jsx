@@ -11,9 +11,11 @@ export const Header = () => {
     <header className="header">
       <nav className="nav container">
 
-        <a href="../../../public/index.html" className="nav__logo">
-          MS 
-        </a>
+      <a href="../../../public/index.html" className="nav__logo">
+  <span class="nav__logo-letter">M</span>
+  <span class="nav__logo-letter">S</span>
+</a>
+
 
 
         <div className= {Toggle ? "nav__menu showMenu" : "nav__menu"}> 
@@ -39,6 +41,11 @@ export const Header = () => {
             <li className="nav__item">
               <a href="#services" className="nav__link">
                 <i className="uil uil-briefcase-alt nav__icon"></i>Services
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#qualification" className="nav__link">
+                <i className="uil uil-scenery nav__icon"></i>Qualification
               </a>
             </li>
             <li className="nav__item">

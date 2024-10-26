@@ -1,60 +1,161 @@
 .footer {
-    background-color: var(--container-color);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.footer__container {
-    padding: 2rem 0 6rem;
-}
-.footer__title,
-.footer__link {
-    color: var(--title-color);
-}
-
-.footer__title {
+    position: relative;
+    background: url('https://www.transparenttextures.com/patterns/paper.png'); /* Fondo simulando periódico */
+    background-size: cover;
+    background-blend-mode: multiply; 
+    background-color: #417fc2;
+    padding: 1rem 0 1rem;
     text-align: center;
-    margin-bottom: var(--mb-2);
-    color: rgb(31, 141, 141);
+    color: #5e7ee6;
+    overflow: hidden;
 }
 
+  
+  .footer::before, .footer::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    z-index: 0;
+  }
+  
 
-
-.footer__link:hover {
-    color: var(--title-color-dark)
+  .footer__container {
+    position: relative;
+    padding: 2rem 0 4rem;
+    z-index: 1;
+  }
+  
+  .footer__title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .footer__title:hover {
+    color: #9fd6f6; 
 }
-.footer__list {
+  
+  .footer__description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: rgba(206, 205, 205, 0.85);
+  }
+  
+  .footer__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .footer__link {
+    color: rgba(225, 225, 225, 0.8);
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer__link:hover::after {
+    width: 100%;
+  }
+  
+  .footer__link:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+  
+  .footer__social {
     display: flex;
     justify-content: center;
     column-gap: 1.5rem;
-    margin-bottom: var(--mb-2);
+    margin-bottom: 2rem;
+  }
+  
+  .footer__social-link {
+    color: rgba(230, 230, 230, 0.8);
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 3rem; 
+    height: 3rem; 
 }
-.footer__social {
-    display: flex;
-    justify-content:center;
-    column-gap: 1.25rem;
-}
-.footer__social-link {
-    background-color: var(--title-color);
-    color: var(--container-color);
-    font-size: 1.125rem;
-    padding: 0.4rem;
-    border-radius: 0.5rem;
-    display: inline-flex;
-}
-.footer__social-link:hover {
-    background-color: var(--title-color-dark);
-}
-.footer__copy {
+  
+  .footer__social-link:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.2);
+  }
+  
+ 
+  
+  .footer__input {
+    padding: 0.7rem;
+    border: 1px solid rgba(255, 254, 254, 0.2);
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 240px;
+    color: #333;
+  }
+  
+  .footer__button {
+    padding: 0.7rem 1.5rem;
+    background-color: #85bbd0;
+    color: #fafafa;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer__button:hover {
+    background-color: #4fb1b8;
+    color: #ffffff;
+    transform: translateY(-3px);
+  }
+  
+ 
+  
+  .footer__copy {
     display: block;
-    margin-top: 4.5rem;
-    color: var(--title-color);
-    text-align: center;
-    font-size: var(--smaller-font-size);
-}
-@media screen and (max-width: 992px) {
+    margin-top: 4rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media screen and (max-width: 992px) {
     .footer__social-link {
-        padding: 0.25rem;
-        border-radius: 0.25rem;
-        font-size: 1rem;
+      font-size: 1.2rem;
     }
-}
+  
+    .footer__input {
+      width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .footer__subscribe {
+      flex-direction: column;
+    }
+  
+    .footer__input, .footer__button {
+      width: 100%;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .footer__button {
+      border-radius: 0.5rem;
+    }
+  }
+  

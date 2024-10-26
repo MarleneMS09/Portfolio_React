@@ -9,8 +9,7 @@ import { Home } from './components/home/Home';
 import { Portfolio } from './components/portfolio/Portfolio';
 import { Qualification } from './components/qualification/Qualification';
 import { Services } from './components/services/Services';
-
-
+import { Skills } from './components/skills/Skills';
 
 function App() {
   return (
@@ -24,12 +23,14 @@ function App() {
     <Cursor />
     <About />
     <Services />
+    <Skills />
     <Qualification />
     <Portfolio />
     <Contact />
+   
     <Footer />
 
-  
+
    </main>
    </>    
   );

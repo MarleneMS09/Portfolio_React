@@ -4,6 +4,9 @@
     align-items: center;
     column-gap: 4rem;
 }
+.about__title{
+    color:#414141;
+}
 
 .about__img {
     max-width: 100%;
@@ -24,25 +27,23 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.55rem;
     text-align: center;
-    padding: 1rem 1.25rem ;
+    padding: 1rem 1.30rem;
+    animation-fill-mode: forwards;
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%); 
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);   
 }
+
 
 .about__icon {
-    font-size: 1.9rem;
-    color: var(--title-color);
+    font-size: 1.5rem;
+    transition: color 0.7s ease;
     margin-bottom: var(--mb-0-5);
- 
 }
 
-.about__title {
-    font-size: var(--small-font-size);
-    font-weight: var(--small-font-size);
-    
+.about__icon:hover {
+    color: #0f1749;
 }
-
-
-
-
 
   
 .newtons-cradle {
@@ -175,58 +176,18 @@
     
   }
   
-  /* Glass Efect */
-.about__box {
-    background: rgba(255, 255, 255, 0.2); 
-    border-radius: 15px; 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
-    text-align: center;
-    padding: 1rem 1.25rem;
-    color: #fff;
-    transition: transform 0.3s ease-in-out, background-color 0.5s ease-in-out;
-    animation: fadeIn 1s ease-in-out;
-    animation-fill-mode: forwards;
-  }
+
+
+
+
+
+
   
-  .about__box:nth-child(1) {
-    animation-delay: 0.1s;
-  }
+
+
+
+
+
+
   
-  .about__box:nth-child(2) {
-    animation-delay: 0.3s;
-  }
-  
-  .about__box:nth-child(3) {
-    animation-delay: 0.5s;
-  }
-  
-  .about__box:hover {
-    transform: scale(1.05);
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); 
-    transition: transform 0.3s ease-in-out, background-color 0.5s ease-in-out;
-  }
-  
-  .about__icon {
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-  
-  .about__box:hover .about__icon {
-    transform: rotate(360deg); 
-    color: var(--first-color);
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
   
