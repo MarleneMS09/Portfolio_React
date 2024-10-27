@@ -55,20 +55,7 @@
 .qualification__calender {
     font-size: var(--small-font-size);
 }
-.qualification__rounder {
-    display: block;
-    width: 13px;
-    height: 13px;
-    background-color: rgb(49, 90, 202);
-    border-radius: 50%;
-}
-.qualification__line {
-    display: inline-block;
-    width: 2px;
-    height: 100%;
-    background-color: var(--text-color);
-    transform: translate(6px, -7px);
-}
+
 
 @media screen and (max-width: 992px) {
     .qualification__container {
@@ -99,32 +86,9 @@
     }
 }
 
-.qualification__content--right {
-    position: relative; 
-}
 
-.qualification__line--experience {
-    position: absolute;
-    top: 0;
-    left: calc(50% - 1px);
-    height: 100%;
-    width: 1.5px;
-    background-color: var(--text-color);
-    z-index: -1;
-}
 
-.qualification__line--experience::before {
-    content: "";
-    width: 13px;
-    height: 13px;
-    background-color: rgb(49, 90, 202);
-    border-radius: 50%;
-    position: absolute;
-    top: -6px;
-    left: -6px;
-}
 
-/* Estilos específicos para la sección de experiencia laboral */
 .experience-section {
     padding: 20px;
     background-color: #f9f9f9;
@@ -154,8 +118,8 @@
 }
 
 .experience-dot {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     background-color: #077bff;
     border-radius: 50%;
     position: absolute;
@@ -189,7 +153,7 @@
 
 
 .experience-content {
-    margin-left: 30px;
+    margin-left: 20px;
 }
   
 .experience-position {
@@ -199,25 +163,25 @@
 }
   
 .experience-company {
-    font-size: 12px;
+    font-size: 16px;
     color: #333;
     margin: 5px 0;
 }
   
 .experience-date {
-    font-size: 14px;
+    font-size: 15px;
     color: #888;
     margin-bottom: 10px;
 }
   
 .experience-description {
-    font-size: 16px;
+    font-size: 15px;
     color: #555;
     margin-bottom: 10px;
 }
   
 .experience-link {
-    font-size: 14px;
+    font-size: 13px;
     color: #17aae0;
     text-decoration: none;
 }
@@ -228,10 +192,10 @@
 .experience-item {
     background-color: #fffefe; 
     border-radius: 8px; 
-    padding: 20px;
+    padding: 18px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .experience-item:hover {

@@ -6,18 +6,18 @@
 
 .services__content {
     position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: rgb(253, 253, 253);
     padding: 4rem 0 2rem 2.6rem;
     cursor: pointer;
-    transition: outline 0.3s, background-color 0.3s;
-    border-radius: 15px;
-
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1),
-        0 1px 3px rgba(0, 0, 0, 0.08),
-        inset 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+    background: linear-gradient(145deg, #f3f8fd, #f5f8f8);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 
+                0 1px 3px rgba(0, 0, 0, 0.08), 
+                inset 0 0 10px rgba(255, 255, 255, 0.3);
     overflow: hidden;
 }
+
+
 
 .services__icon {
     display: block;
@@ -194,3 +194,21 @@
     background-color: #76d6e7;
 }
 
+.services__tools {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.services__circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.red { background-color: #FF5A5F; }
+.yellow { background-color: #FFBD2E; }
+.green { background-color: #28C940; }

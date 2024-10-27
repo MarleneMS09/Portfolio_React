@@ -52,7 +52,9 @@ export const Contact = () => {
             </div>
           </div>
         </div>
+        
         <div className="contact__content">
+          
           <h3 className="contact__title">Write me your project</h3>
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
@@ -70,7 +72,7 @@ export const Contact = () => {
             <button className="button button--flex">
           Send Message
           <svg
-                  class="button__icon"
+                  className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"

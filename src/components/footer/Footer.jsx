@@ -24,9 +24,9 @@ export const Footer = () => {
               </li>
             </ul>
             <div className="footer__social">
-            <a href=" https://www.instagram.com/mar_mmsz?igsh=cGJmdTd1N29xbTls " className="footer__social-link" target="_blank"><i class= "uil uil-instagram"></i></a>
-            <a href=" https://www.linkedin.com/in/vanessamarlenemsanchez/ " className="footer__social-link" target="_blank"><i class="uil uil-linkedin"></i></a>
-            <a href=" https://github.com/MarleneMS09 " className="footer__social-link" target="_blank"><i class= "uil uil-github-alt"></i></a>
+            <a href=" https://www.instagram.com/mar_mmsz?igsh=cGJmdTd1N29xbTls " className="footer__social-link" target="_blank"><i className= "uil uil-instagram"></i></a>
+            <a href=" https://www.linkedin.com/in/vanessamarlenemsanchez/ " className="footer__social-link" target="_blank"><i className="uil uil-linkedin"></i></a>
+            <a href=" https://github.com/MarleneMS09 " className="footer__social-link" target="_blank"><i className= "uil uil-github-alt"></i></a>
 
             </div>
            

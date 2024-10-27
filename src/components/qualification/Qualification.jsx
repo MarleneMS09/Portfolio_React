@@ -4,28 +4,28 @@ import './qualification.css';
 export const Qualification = () => {
   const experiences = [
     {
-      title: 'Creador de Contenido',
-      company: 'Twitch',
-      date: 'Actualmente...',
-      description: 'Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.',
-      link: 'https://twitch.tv',
-      linkText: 'Saber más'
+      title: 'Front-End Developer & UX/UI Design',
+      company: 'Actosoft Mx',
+      date: 'July 2024 - Until Now',
+      description: 'Lead UX/UI design for the food industry, creating functional and visually appealing interfaces with Figma, React, HTML, and CSS; manage sprints in Asana, collaborate with front-end developers via GitHub, and oversee task management and bug resolution for consistent, goal-aligned deliverables.',
+      link: 'https://actosoft.com.mx/frontend',
+      linkText: 'Company Page'
     },
     {
-      title: 'Principal Frontend Engineer',
-      company: 'Adevinta Spain',
-      date: 'Septiembre 2022',
-      description: 'Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.',
-      link: 'https://adevinta.com',
-      linkText: 'Saber más'
+      title: 'Instructor Front-End',
+      company: 'Technolochicas',
+      date: 'April 2024 - July 2024',
+      description: 'Teach foundational web development (HTML, CSS, JavaScript) to inspire young girls in tech, fostering an inclusive environment with practical exercises and progress tracking via Google Classroom for personalized feedback.',
+      link: 'https://tecnolochicas.mx/',
+      linkText: 'Company Page'
     },
     {
-      title: 'Software Engineer',
-      company: 'Tech Solutions Inc.',
-      date: 'Junio 2021 - Agosto 2022',
-      description: 'Desarrollé aplicaciones web escalables utilizando tecnologías modernas como React y Node.js. Trabajé en equipo para mejorar la experiencia de usuario y optimizar el rendimiento de la aplicación.',
-      link: 'https://techsolutions.com',
-      linkText: 'Saber más'
+      title: 'Full Stack Developer',
+      company: 'Vermic Studios',
+      date: 'April 2022 - April 2024',
+      description: 'Developed responsive, user-focused interfaces using React and Bootstrap, integrated AWS services like CloudFront and S3 for efficient content delivery, and used Docker for consistent environments in an educational e-commerce platform',
+      link: 'https://www.vermic.com/',
+      linkText: 'Company Page'
     }
   ];
 

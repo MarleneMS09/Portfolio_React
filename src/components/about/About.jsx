@@ -22,7 +22,7 @@ export const About = () => {
           {<br></br>}I transform ideas into innovative solutions, always prioritizing intuitive design and great user interactions. </p>
         <a download = "" href= {CV} className="button button--flex"> Download CV</a>
         <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
