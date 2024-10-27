@@ -342,158 +342,77 @@ font-size: 3rem;
 
 /* MOBILE 992PX */
 
+/* Tablets and Small Screens (<= 992px) */
 @media screen and (max-width: 992px) {
-   .home__content {
-    grid-template-columns: 100px repeat(2,1fr);
-    column-gap: 1.25rem;
-   }
-   .home__hand {
-    width: 26px;
-    height: 26px;
-   }
-   .home__subtitle {
-    padding-left: 3.75rem;
-    margin-bottom: var(--mb-1);
-   }
-   .home__subtitle::before {
-    width: 42px;
-    top: 0.8rem;
-   }
-   .home__description {
-    max-width: initial;
-    margin-bottom: var(--mb-2-25);
-   }
-   .home__img {
+  .home__content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .home__social {
+    justify-self: start;
+  }
+
+  .home__title,
+  .home__description {
+    text-align: center;
+  }
+
+  .home__img {
     width: 250px;
-        height: 250px;
-        box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.6);
-   }
-   .home__scroll {
-    margin-left: 7.5rem;
-   }
-.button--flex {
-   margin-bottom: 30px;
-   margin-top: 30px;
-   }
+    height: 250px;
   }
-  
+}
 
-/* MOBILE 768PX */
-
-
-  @media screen and (max-width: 768px) {
-    .home__content {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      padding: 2rem;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .home__img {
-      order: initial;
-      justify-self: center;
-      width: 200px;
-      height: 200px;
-      box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.3);
-    }
-  
-    .home__data {
-      grid-column: initial;
-      text-align: center;
-    }
-  }
-  
-
-/* MOBILE 425PX */
-
-
-  @media screen and (max-width: 425px) {
-    .container {
-      max-width: 100%; 
-      margin-left: var(--mb-0-75); 
-      margin-right: var(--mb-0-75);
-    }
-  
-    .home__content {
-      grid-template-columns: 1fr; 
-      gap: 1rem; 
-      padding: 2rem; }
-  
-    .home__title {
-      font-size: 32px; 
-    }
-  
-    .home__subtitle {
-      font-size: 1rem; 
-      padding-left: 3rem; 
-    }
-  
-    .home__description {
-      max-width: none; 
-      margin-bottom: var(--mb-1);
-    }
-  
-    .home__img {
-      width: 200px;
-      height: 200px;
-      box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.6);
-    }
-  
-    .home__scroll {
-      margin-left: 2rem; 
-    }
+/* Mobile (<= 768px) */
+@media screen and (max-width: 768px) {
+  .home__content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+    text-align: center;
   }
 
-
-
-
-  @media screen and (max-width: 992px) {
-    .home__img {
-      width: 250px;
-      height: 250px;
-      box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.6);
-      animation: pseudoExpand 8s ease-in-out infinite; /* Mantén la animación */
-    }
+  .home__social {
+    justify-self: start;
   }
-  
-  /* MOBILE 768PX */
-  @media screen and (max-width: 768px) {
-    .home__img {
-      width: 200px;
-      height: 200px;
-      box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.3);
-      animation: pseudoExpand 8s ease-in-out infinite; /* Mantén la animación */
-    }
+
+  .home__title,
+  .home__subtitle,
+  .home__description {
+    text-align: center;
   }
-  /* MOBILE 425PX */
-@media screen and (max-width: 425px) {
+
   .home__img {
     width: 200px;
     height: 200px;
-    box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.6);
-    animation: pseudoExpand 8s ease-in-out infinite; /* Mantén la animación */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición inicial para suavizar */
   }
 }
 
-@media (max-width: 768px) {
+/* Small Mobile Screens (<= 425px) */
+@media screen and (max-width: 425px) {
+  .home__content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    justify-items: center;
+  }
+
+  .home__social {
+    justify-self: start;
+  }
+
+  .home__title {
+    font-size: 28px;
+    text-align: center;
+  }
+
   .home__img {
-    transition: background-image 0.6s ease, transform 0.3s ease; /* Transición más suave */
-  }
-
-  .home__img:active {
-    background-image: url(../../assets/fotoazul_blanco.png); /* Cambia la imagen en mobile al hacer click */
-    transform: translateY(-10px); /* Aplica el mismo efecto de desplazamiento */
-  }
-}
-
-@keyframes pseudoExpand {
-  0%, 100% {
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    width: 180px;
+    height: 180px;
   }
 }
