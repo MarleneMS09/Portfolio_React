@@ -1,6 +1,6 @@
 import React from 'react';
 import CV from "../../assets/cv_vmms_2024.pdf";
-import AboutImg from "../../assets/Vanessa Marlene Sanchez(4).png";
+import AboutImg from "../../assets/portada2.png";
 import "../about/About.css";
 import { Info } from './Info';
 
