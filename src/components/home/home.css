@@ -90,14 +90,14 @@ font-size: 3rem;
 
 .home__title {
   font-size: 35px;
-  font-family: Arial, sans-serif; /* Fuente estándar y sin cursiva */
+  font-family: Arial, sans-serif; 
   margin-bottom: var(--mb-0-25);
   color: transparent;
   background-image: linear-gradient(to right, #2d455e 20%, #33B5FF 70%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  white-space: nowrap; /* Evita el salto de línea */
+  white-space: nowrap; 
   overflow: hidden;
   animation: typing 4s steps(30, end) forwards;
 }
@@ -135,7 +135,7 @@ font-size: 3rem;
   margin-top: 26px;
 }
 .home__img {
-  background: url(../../assets/fotoazul_blanco.png) no-repeat center;
+  background: url(../../assets/mifoto.png) no-repeat center;
   background-size: cover;
   width: 300px;
   height: 300px;
@@ -149,9 +149,6 @@ font-size: 3rem;
 .home__img:hover {
   transform: translateY(-10px); 
 }
-.home__img:hover {
-  background-image: url(../../assets/fotoazul_blanco.png);
-}
 
 .home__img::before {
   content: '';
@@ -161,18 +158,18 @@ font-size: 3rem;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 4px solid rgba(0, 255, 255, 0.5);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.3), 0 0 45px rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(47, 133, 214, 0.3);
+  box-shadow: 0 0 15px rgba(18, 88, 199, 0.5), 0 0 30px rgba(82, 133, 244, 0.3), 0 0 45px rgba(3, 140, 140, 0.2);
   z-index: -1;
-  animation: neonGlow 3s ease-in-out infinite;
+  animation: fadeGlow 3s ease-in-out infinite;
 }
 
-@keyframes neonGlow {
+@keyframes fadeGlow {
   0%, 100% {
-    box-shadow: 0 0 15px rgba(4, 82, 82, 0.5), 0 0 30px rgba(0, 255, 255, 0.3), 0 0 45px rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 183, 255, 0.2);
   }
   50% {
-    box-shadow: 0 0 30px rgba(7, 84, 84, 0.7), 0 0 60px rgba(0, 255, 255, 0.5), 0 0 90px rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 35px rgba(0, 183, 255, 0.4);
   }
 }
 
@@ -230,6 +227,8 @@ font-size: 3rem;
   width: 300px;
   height: 300px;
   border-radius: 50%; /* Mantiene la forma circular */
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
 }
 
 
@@ -284,30 +283,28 @@ font-size: 3rem;
 }
 
 .home__img {
-    background: url(../../assets/otrodiseno.png);
+    background: url(../../assets/anime2-Photoroom.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px rgba(255, 255, 255 /30%);
+    box-shadow: inset 0 0 0 19px rgba(255, 255, 255 /30%);
     order: 1;
     justify-self: center;
     width: 300px;
     height: 300px;
-    animation: pseudoExpand 8s ease-in-out infinite;
+    animation: pseudoExpand 9s ease-in-out infinite;
 }
 
 @keyframes pseudoExpand {
   0%, 100% {
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(98, 141, 215, 0.4), 
+                0 0 30px rgba(0, 132, 255, 0.3);
   }
   50% {
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    box-shadow: 0 0 25px rgba(50, 170, 255, 0.7), 
+                0 0 40px rgba(15, 94, 214, 0.5);
   }
 }
-
-
-
-
 
 .home__scroll {
     margin-left: 9.25rem;

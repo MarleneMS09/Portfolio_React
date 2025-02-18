@@ -1,9 +1,8 @@
 .footer {
     position: relative;
-    background: url('https://www.transparenttextures.com/patterns/paper.png'); /* Fondo simulando periódico */
     background-size: cover;
     background-blend-mode: multiply; 
-    background-color: #417fc2;
+    background-color: hsl(211, 83%, 20%);
     padding: 1rem 0 1rem;
     text-align: center;
     color: #5e7ee6;
